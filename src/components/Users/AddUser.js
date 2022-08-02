@@ -21,7 +21,8 @@ const AddUser = (props) => {
 
     setEnteredUserName("");
     setEnteredAge("");
-    console.log(enteredUserName, enteredAge);
+    // console.log(enteredUserName, enteredAge);
+    props.onAddUser(enteredUserName, enteredAge);
   };
 
   const userNameChangeHandler = (e) => {
