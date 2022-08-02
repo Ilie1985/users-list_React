@@ -1,13 +1,14 @@
 import React from "react";
 import Card from "./UI/Card";
+import styles from "./AddUser.module.css";
 
-function AddUser(props) {
+const AddUser = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
   };
 
   return (
-    <Card>
+    <Card className ={styles.input}>
       <form onSubmit={handleSubmit}>
         <label htmlFor="username">Username</label>
         <input type="text" id="username" />
@@ -19,6 +20,6 @@ function AddUser(props) {
       </form>
     </Card>
   );
-}
+};
 
 export default AddUser;
