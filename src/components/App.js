@@ -1,10 +1,10 @@
 import "./App.css";
-import InputForm from "./InputForm";
+import AddUser from "./AddUser";
 
 function App() {
   return (
     <div className="App">
-      <InputForm />
+      <AddUser />
     </div>
   );
 }
