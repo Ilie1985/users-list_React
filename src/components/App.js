@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 import "./App.css";
 import AddUser from "../components/Users/AddUser";
 import UsersList from "./Users/UsersList";
@@ -16,10 +16,11 @@ const App = (props) => {
   };
 
   return (
-    <div className="App">
+    // React.Fragment --it`s an empty wrapper component built into React:it doesn`t render any real HTML element tot the DOM,but iy fulfills React`s/JSX requirement. The alternative to this is to import Fragment and use only Fragment ,instead of React.Fragment
+    <Fragment>
       <AddUser onAddUser={addUserHandler} />
       <UsersList users={usersList} />
-    </div>
+    </Fragment>
   );
 };
 
